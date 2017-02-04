@@ -1,0 +1,175 @@
+<html>
+<head>
+<style>
+header {
+    height: 147px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+	background-attachment:fixed;
+	background-image:url(images/br2_header.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-color:#000;
+}
+
+::-webkit-scrollbar { 
+    display: block; 
+}
+
+nav {
+    font-family: 'Book Antiqua', serif;
+    width: 980px; 
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: #ee2535;
+    border-bottom-color: #ee2535;
+    background: rgba(75,0,0,0.6);
+}
+
+ul.menu {
+    display: inline-block;
+    list-style-type: none;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+li.menuitem {
+    display: inline-block;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 1.7em;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #666;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+ul.menu a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul.menu a:hover {
+	text-shadow: 3px 3px 0 #ee2535, -1px -1px 0 #ee2535, 1px -1px 0 #ee2535, -1px 1px 0 #000, 1px 1px 0 #ee2535;
+}
+
+iframe[Attributes Style] {
+    width: 100%;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    height: 520px;
+}
+
+article {
+    width: 980px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -2;
+    background: rgba(75,0,0,0.6);
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+    border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: #ee2535;
+    border-bottom-color: #ee2535;
+    border-color: #ee2535;
+    margin-top: 10px;
+    font-family: 'Georgia', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    margin: 0px 10px 0px 10px;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0px 10px 0px 10px;
+}
+
+article p {
+    margin-right: 10px;
+    margin-left: 10px;
+} 
+
+.right {
+    float: right;
+    margin: 15px 10px 0px 35px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+    margin: 15px 35px 0px 10px;
+}
+
+#dela, #ares, #karl {
+	height: 450px
+}
+
+#story {
+	border-top-style: double;
+    border-bottom-style: double;
+    border-top-color: #ee2535;
+    border-bottom-color: #ee2535;
+    border-color: #ee2535;
+}
+
+a {
+    color: #fff;
+}
+
+footer {
+    width: 980px;
+    padding-top: 25px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.5;
+}
+</style>
+</head>
+<body id="background">
+<header>
+<a href="index.html"><img align="center" src="images/br2_logo.png" alt="Brandish 2: The Planet Buster" height="147" border="0"></a>
+<a href="http://www.brandishpsp.com/"><img align="center" src="images/br1_promo.png" alt="Brandish: The Dark Revenant" height="147" border="0"></a>
+</header>
+<nav>
+<ul class="menu">
+	<li class="menuitem"><a href="story.html" target="br2_iframe">Story</a> </li>
+	<li class="menuitem"><a href="world.html" target="br2_iframe">World</a></li>
+	<li class="menuitem"><a href="characters.html" target="br2_iframe">Characters</a></li>
+	<li class="menuitem"><a href="instructions.html" target="br2_iframe">Instructions</a></li>
+	<li class="menuitem"><a href="faq.html" target="br2_iframe">FAQ</a></li>
+</ul>
+</nav>
+<!---START iframe--->
+<iframe width="100%" id="iframe" name="br2_iframe" allowtransparency="true" onload="calcHeight();" src="home.html" scrolling="true" frameborder="0" height="680"></iframe>
+<!---END iframe--->
+</body>
+<footer>
+©1993-2017 Nihon Falcom Corporation. All Rights Reserved. Webdesign based on the Brandish: The Dark Revenant website by XSEED Games / Marvelous USA, Inc.
+</footer>
+</html>
