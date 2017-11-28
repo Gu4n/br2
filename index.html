@@ -13,7 +13,7 @@ header {
 
 body {
 	background-attachment:fixed;
-	background-image:url(images/br2_header.jpg);
+	background-image:url(images/br2_wallpaper.jpg);
 	background-repeat:no-repeat;
 	background-position:center top;
 	background-color:#000;
@@ -21,6 +21,11 @@ body {
 
 ::-webkit-scrollbar { 
     display: block; 
+}
+
+footer {
+	bottom:0;
+	text-align: center;
 }
 
 nav {
@@ -34,6 +39,12 @@ nav {
     border-top-color: #ee2535;
     border-bottom-color: #ee2535;
     background: rgba(75,0,0,0.6);
+}
+
+@media screen and (max-width: 1047px) {
+	a.br1-promo {
+visibility: hidden;
+}
 }
 
 ul.menu {
@@ -145,17 +156,18 @@ a {
 }
 
 footer {
-    width: 980px;
-    padding-top: 25px;
-    margin: 0 auto;
+    margin: auto;
+    width: 100%;
+	padding-top: 25px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 1.5;
+	position:absolute;
+	text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	box-shadow:inset 0px -20px 20px 5px black;
 }
-audio {
-	width: 64px;
-}
+
 </style>
 </head>
 <body id="background">
@@ -168,8 +180,12 @@ audio {
 		autostart="true">
 </audio>
 <header>
-<a href="index.html"><img align="center" src="images/br2_logo.png" alt="Brandish 2: The Planet Buster" height="147" border="0"></a>
-<a href="http://www.brandishpsp.com/"><img align="center" src="images/br1_promo.png" alt="Brandish: The Dark Revenant" height="147" border="0"></a>
+<a class="br2-logo" href="index.html"><img align="center" src="images/br2_logo.png" alt="Brandish 2: The Planet Buster" height="147" 
+
+border="0"></a>
+<a class="br1-promo" href="http://www.brandishpsp.com/"><img align="center" src="images/br1_promo.png" alt="Brandish: The Dark Revenant" 
+
+height="147" border="0"></a>
 </header>
 <nav>
 <ul class="menu">
@@ -182,10 +198,14 @@ audio {
 </ul>
 </nav>
 <!---START iframe--->
-<iframe width="100%" id="iframe" name="br2_iframe" allowtransparency="true" onload="calcHeight();" src="home.html" scrolling="true" frameborder="0" height="660"></iframe>
+<iframe width="100%" id="iframe" name="br2_iframe" allowtransparency="true" onload="calcHeight();" src="home.html" scrolling="true" 
+
+frameborder="0" height="65%"></iframe>
 <!---END iframe--->
 </body>
 <footer>
-(C) 1993-2017 Nihon Falcom Corporation. All Rights Reserved. Webdesign based on the Brandish: The Dark Revenant website by XSEED Games / Marvelous USA, Inc.
+(C) 1993-2017 Nihon Falcom Corporation. All Rights Reserved. Webdesign based on the Brandish: The Dark Revenant website by XSEED Games / 
+
+Marvelous USA, Inc.
 </footer>
 </html>
